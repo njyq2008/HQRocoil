@@ -3,15 +3,15 @@
 
 ## Introduction
 HQRocoil is a collection of projects aimed at providing open-source solutions for high-performance flexible Rogowski coil current probes, each with distinctive features.  
-- All product hardware is designed with LCEDA / EasyEDA [EasyEDA](https://easyeda.com/).  
-- HQRocoil-Mini is a single-range, classic flexible Rogowski coil. This project has already been released on OSHWHub, with the design goal of ultra-low cost and ease of use. The product is currently sold in mainland China at a price of ￥499 RMB.  
+- All product hardware is designed with LCEDA / [EasyEDA](https://easyeda.com/).  
+- HQRocoil-Mini is a single-range, classic flexible Rogowski coil. This project has already been released on [OSHWHub](https://oshwhub.com/njyq2008/hqrocoil-mini-all-chinese-made-r), with the design goal of ultra-low cost and ease of use. The product is currently sold in mainland China at a price of ￥499 RMB.  
 - HQRocoil-Lite is a single-range flexible Rogowski coil that significantly improves bandwidth and noise performance over the Mini version, while also offering some distinctive features (not yet publicly disclosed). The project will debut on CrowdSupply (hopefully it will be available worldwide), with a tentative price of $159 USD.  
 - HQRocoil-Pro is a multi-functional flexible Rogowski coil planned for future research and development; specific details are not yet disclosed.
 - License: CC BY-NC-SA 4.0
 
 ## Acknowledgements and References
-- This project references the open-source project [westonb/rogowski-relief](https://github.com/westonb/rogowski-relief) on GitHub to some extent. Respect and thanks to the original author!  
-- Mini version is supported by the JLCPCB Spark Plan 2026 星火计划2026. 
+- This project is initially inspired by, and partially references, the open-source project [westonb/rogowski-relief](https://github.com/westonb/rogowski-relief) on GitHub. Respect and thanks to Dr.Braun!  
+- Mini version is supported by the JLCPCB Spark Plan 2026 [星火计划2026](https://oshwhub.com/njyq2008/hqrocoil-mini-all-chinese-made-r). 
 
 ## Video Link:
 [HQRocoil-Mini Demo](https://www.bilibili.com/video/BV18ocuzFEsE/)
@@ -23,8 +23,8 @@ HQRocoil is a collection of projects aimed at providing open-source solutions fo
 
 ## Introduction
 HQRocoil是一系列项目的集合，旨在提供各具特色的高性能柔性罗氏线圈电流探头开源解决方案。
-- 所有产品硬件均由立创EDA/海外EasyEDA[EasyEDA](https://easyeda.com/)设计；
-- HQRocoil-Mini是单量程单模式经典柔性罗氏线圈，这一项目已经在OSHWHub上发布，其设计目标是超低成本、简单易用。产品目前在中国大陆售卖，价格为499元人民币；
+- 所有产品硬件均由立创EDA/海外[EasyEDA](https://easyeda.com/)设计；
+- HQRocoil-Mini是单量程单模式经典柔性罗氏线圈，这一项目已经在[OSHWHub](https://oshwhub.com/njyq2008/hqrocoil-mini-all-chinese-made-r)上发布，其设计目标是超低成本、简单易用。产品目前在中国大陆售卖，价格为499元人民币；
 - HQRocoil-Lite是单量程单模式柔性罗氏线圈，在Mini版的基础上大幅优化了带宽和噪声性能，同时提供一些特色功能（暂不公开），项目会在CrowdSupply上首发，定价暂定为159美元；
 - HQRocoil-Pro是未来将设计研发的一款多功能柔性罗氏线圈，具体细节暂不公开。
 - License: CC BY-NC-SA 4.0
@@ -32,7 +32,7 @@ HQRocoil是一系列项目的集合，旨在提供各具特色的高性能柔性
 
 ## 致谢和参考
 - 本项目部分参考了Github上开源项目[westonb/rogowski-relief](https://github.com/westonb/rogowski-relief)，向原作者表示敬意和感谢！
-- Mini版获得嘉立创星火计划2026支持，感谢！
+- Mini版获得嘉立创[星火计划2026](https://oshwhub.com/njyq2008/hqrocoil-mini-all-chinese-made-r)支持，感谢！
 
 
 ## 视频链接：
