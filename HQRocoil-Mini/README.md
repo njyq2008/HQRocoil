@@ -51,8 +51,8 @@ Example applications for HQRocoil-Mini:
 ## Hardware Description
 ### Schematic and PCB Thumbnails
 All drawings are A4 size.
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a0e79cb13d364c88984531aaf2d8914e.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/79aa8d11e9734a39bc2fe02d59766e6a.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/2.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/3.png)
 
 It is worth mentioning that the PCB is designed as a 6‑layer board. However, a 4‑layer board (or even a 2‑layer board, though significantly more challenging) would also suffice. The reason for using 6 layers is simply that the author exchanged a mere 20 “gold beans” for a large stack of 150 RMB coupons for 6‑layer boards and felt uncomfortable letting them go to waste.
 
@@ -63,7 +63,7 @@ The power section is relatively simple, consisting of three parts: battery manag
 - **Negative Voltage Generation**: SGM3204YN6G/TR (SGMICRO) charge pump converts 5V to -5V.
 - **LDOs**: GM1501AUJZ-2.5-R7 and GM1206AUJZ-2.5-R7 (Common-Mode Semiconductor) convert ±5V to clean ±2.5V to power the analog signal conditioning circuitry of the integrator.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a38714c907914035a9768c7b4027b368.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/4.png)
 
 ### Integrator
 The integrator consists of three parts: the main integrator, servo feedback, and high‑pass filter with amplification.
@@ -74,22 +74,22 @@ The integrator consists of three parts: the main integrator, servo feedback, and
     - An adjustable resistor is reserved to modify the low‑frequency integration time constant, allowing adjustment of the low‑frequency gain of the Rogowski coil.
     - The integrator op‑amp footprint is SOT23‑6, but the selected op‑amp is SOT23‑5. Users can experiment with other op‑amps to improve noise, bandwidth, or other performance metrics.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f78e9abcc0e94fae9348f98439972c59.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f38eb75160904bb3975502c488aa4fb7.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/5.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/6.png)
 
 - **Servo Feedback**:
     - The servo feedback circuit can be thought of as a very slow integrator. From a DC analysis perspective, its goal is to null the DC output of the main integrator. In reality, it implements a low‑frequency high‑pass filter, not only nulling DC but also attenuating low‑frequency 1/f noise of the integrator. For more information, refer to TI’s application note [A new filter topology for analog high-pass filters](https://www.ti.com/lit/an/slyt299/slyt299.pdf).
-    - The servo feedback uses the TLV333 from TZC Semiconductor. Many other domestic semiconductor manufacturers offer OPA333 and TLV333 equivalents, which should be interchangeable.
+    - The servo feedback uses the TLV333 from TechPublic Semiconductor. Many other domestic semiconductor manufacturers in China offer OPA333 and TLV333 equivalents, which should be interchangeable.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a1d312ad77ea4f16b7afdeb5fb396f5b.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/7280af40349e4f6e97255d1d11e8fd6d.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/7.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/8.png)
 
 - **High‑Pass Filter with Amplification**:
     - The integrator output is followed by a high‑pass filter with amplification. This stage fine‑tunes the gain and provides additional high‑pass filtering at low frequencies. The op‑amp is the SGM8061 from SGMICRO, a high‑speed voltage‑feedback CMOS op‑amp well suited for this application.
     - An adjustable resistor is reserved to adjust the output gain across the full bandwidth, and a position for gain peaking is provided to compensate for cable attenuation or other effects. When using the coil selected for this project, these compensation features are not needed to achieve a smooth gain curve.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/99e5c636a1f0492ca0445975439a24fe.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/669b44cd6cec40caacff5c56b711e08c.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/9.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/10.png)
 
 ## Software Code
 This project is a pure analog solution; no software code is involved.
@@ -98,11 +98,11 @@ This project is a pure analog solution; no software code is involved.
 ### Calibration Challenges
 The main challenge in calibration is characterizing the frequency‑domain response. For the specific procedure, please refer to the video. The author used a vector network analyzer (VNA) for calibration, measuring S21 and adjusting two potentiometers to achieve the desired smooth curve. When using a VNA, a wideband amplifier is typically needed to boost the signal, as the sensitivity is otherwise too low for the VNA to detect. However, designing a wideband amplifier with a smooth response from a few Hz to hundreds of MHz is no trivial task.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/4eb721aec60145c9baae8ca11442ce6d.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/11.png)
 
 Alternatively, one could calibrate using a signal generator and oscilloscope. However, this requires a relatively accurate current sensing reference, and because the probe sensitivity is low, you may need to wind a multi‑turn coil to amplify the current under test.
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/8c3b4e3349f24bd1bf84ec7f28d69376.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/12.png)
 
 ### Usage Precautions
 Since the coil can be damaged and this type of probe is often used to measure exposed high‑voltage conductors (e.g., power device pins), **the oscilloscope must be grounded** for personal safety.
