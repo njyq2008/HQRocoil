@@ -111,10 +111,10 @@ Additionally, because the unit contains a battery, avoid using it in high‑temp
 
 ## Assembly Process
 ### PCBA, 3D Enclosure, and Panel Renderings
-![image.png](https://image.lceda.cn/oshwhub/pullImage/54b5f75a8e314bf49e8b5306a8a894c4.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/e44b8bcad3d14ddaa5cf9e675b52dcac.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/e8f3581b903e412eb39f148f34cf1609.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/5168a2c6b75640acb7c16bd1ecf33f05.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/13.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/14.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/15.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/16.png)
 
 ### Assembly Steps
 The enclosure design is generous, so assembly should not pose many difficulties. Follow these steps:
@@ -131,28 +131,28 @@ The enclosure design is generous, so assembly should not pose many difficulties.
 
 ## Photos of the Actual Product
 - PCBA
-![image.png](https://image.lceda.cn/oshwhub/pullImage/221fef84f9e148118e92aa2af0ec449b.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/17.png)
 
 - Coil
-![image.png](https://image.lceda.cn/oshwhub/pullImage/68d0cf8f3332499ba673192af362577a.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/18.png)
 
 - Complete Unit
-![image.png](https://image.lceda.cn/oshwhub/pullImage/9681ffa9f7b1488091c4fdeac3da7c5c.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/19.png)
 
 - Video Screenshots (Performance Curves)
     - High‑Frequency Bandwidth Test
-    ![image.png](https://image.lceda.cn/oshwhub/pullImage/f02cd99a22c0480d90ffec68de8a9bf3.png)
+    ![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/20.png)
     - Low‑Frequency Bandwidth Test
       (Note: Blue trace is a commercial probe, red trace is this open‑source project.)
-    ![image.png](https://image.lceda.cn/oshwhub/pullImage/c19eaf4f6b1845df9eaf695717014382.png)
+    ![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/21.png)
     - Noise Floor Test
-    ![image.png](https://image.lceda.cn/oshwhub/pullImage/ba0ce08a2b3e4a1da850f365f96f8aab.png)
+    ![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/22.png)
     - High‑Current Pulse Train – Time‑Domain Waveform Comparison
       (Note: Blue is commercial, red is this project.)
-    ![image.png](https://image.lceda.cn/oshwhub/pullImage/71db62f1052b460e8d09ad3fffa46020.png)
+    ![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/23.png)
     - High‑Speed Current – Time‑Domain Waveform Comparison
       (Note: Blue is a Japanese commercial probe, green is a British commercial probe, red is this project, yellow is the reference. The compared commercial probes have only 30 MHz bandwidth, while the yellow reference shunt has nearly 1 GHz bandwidth, so both are inaccurate. Detailed explanation is in the video.)
-    ![image.png](https://image.lceda.cn/oshwhub/pullImage/f7954bdbd5a84ba7a7e16f01a5bc432c.png)
+    ![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/24.png)
 
 ## Cost Breakdown
 Cost calculation based on a batch of 5 units, excluding the coil:
@@ -169,7 +169,7 @@ Cost calculation based on a batch of 5 units, excluding the coil:
 ## 项目简介
 罗氏线圈（Rogowski Coil）是一种基于电磁感应原理的交流电流测量传感器，因其独特的空心结构，具备不饱和、线性度好、宽频带响应及对被测电路几乎无侵入等一系列突出优势。它通过检测载流导体电流变化时感生的电压信号（即M*di/dt），再经积分电路还原出原始电流波形，特别适用于高频、大电流及含有快速瞬变分量的复杂信号测量场景。凭借上述特性，罗氏线圈在现代电气测量领域中占据着不可替代的地位，广泛应用于电力电子变换器、新能源发电与储能系统、电机驱动与控制、智能电网监测、脉冲功率技术及电气故障诊断等多个关键领域。其宽频带特性使其能够精确捕捉功率器件开关瞬态、分析电能质量扰动；其线性度确保了大动态范围内电流测量的准确性；而其非接触的测量方式则对被测系统引入极低的寄生效应，显著提升测量可信度。近年来，随着以碳化硅（SiC）、氮化镓（GaN） 为代表的宽禁带半导体器件向着更高开关速度演进，以及电力系统对宽频带、高精度测量需求的日益严苛，罗氏线圈在开关特性评估、脉冲电流分析、高频振荡捕捉等方面的应用价值持续凸显。结合现代高性能模拟积分器，罗氏线圈正朝着更高带宽、更低噪声、更强抗干扰能力及智能化集成方向不断发展，成为支撑新一代电力电子与智能电网技术演进的重要测量基础。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/60fe3d7117264253b604503882a28a9b.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/1.png)
 HQRocoil-Mini是一款开源的、基于全国产器件实现的罗氏线圈柔性电流探头，目标是用超低的成本、100%国产的器件实现一款能用于在狭窄空间内测量高频交流电流或脉冲电流的极细柔性电流探头。探头由线圈本体和积分器两个部分组成。线圈本体采用波妞科技定制的线圈，经过优化，体积小巧，足以穿过TO-220甚至更小封装晶体管的引脚之间，并可套在许多通孔功率元件的引脚上，实现非侵入式电流测量。积分器负责调理来自罗氏线圈的信号，并提供与被罗氏线圈环绕的导体中电流成正比的输出电压。
 本开源项目的初衷，是想对比万元级进口产品，以5%不到的复刻成本（500元以内），达到其60-70%的使用体验，让任何想体验罗氏线圈的朋友都有机会拥有一把自己的柔性电流探头，甚至让这款探头能成为大家调试电机、测试功率器件时的称手工具。
 
@@ -215,9 +215,9 @@ HQRocoil-Mini用途举例：
 ## 硬件说明
 ### 原理图和PCB缩略图
 图纸均为A4大小
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a0e79cb13d364c88984531aaf2d8914e.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/2.png)
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/79aa8d11e9734a39bc2fe02d59766e6a.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/3.png)
 
 值得一提的是，PCB为六层板设计，但是实际上本项目用四层板（甚至双面板，但是难度会大不少）完全是可以完成的。之所以使用六层板，是因为作者用区区20金豆兑换了一大把150元六层板券，用不掉难受。
 
@@ -228,7 +228,7 @@ HQRocoil-Mini用途举例：
 - 负压生成：圣邦SGM3204YN6G/TR电荷泵实现5V向-5V的转换
 - LDO：共模半导体GM1501AUJZ-2.5-R7和GM1206AUJZ-2.5-R7实现±5V电压向纯净的±2.5V电压的变换，用于给积分器模拟信号调理电路供电。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a38714c907914035a9768c7b4027b368.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/4.png)
 
 ### 积分器
 积分器由三部分组成：主积分器，伺服反馈，高通滤波放大。
@@ -239,25 +239,25 @@ HQRocoil-Mini用途举例：
     - 积分器预留一个可调电阻，可以调节低频积分时间常数，用于调整罗氏线圈的低频增益。
     - 积分器运放保留了SOT23-6，选择的运放是SOT23-5的，用户可以自行尝试更换其他运放来提升噪声、带宽等性能指标。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f78e9abcc0e94fae9348f98439972c59.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/5.png)
 
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f38eb75160904bb3975502c488aa4fb7.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/6.png)
 
 
 - 伺服反馈：
     - 伺服反馈电路可简单看成一个很慢的积分器，从直流分析角度直观理解，它控制的目标是让积分器的输出直流调零；当然实际上它是实现了一个低频的高通滤波，不仅直流调零，还能削弱积分器的低频1/f噪声。更多信息可以参考TI的应用手册[A new filter topology for analog high-pass filters](https://www.ti.com/lit/an/slyt299/slyt299.pdf)
     - 伺服反馈采用了台舟半导体的TLV333，当然很多其他国产半导体厂商都有OPA333和TLV333，应该可以替换使用。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a1d312ad77ea4f16b7afdeb5fb396f5b.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/7280af40349e4f6e97255d1d11e8fd6d.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/7.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/8.png)
 - 高通滤波放大：
     - 积分器的输出接一级高通滤波放大器，这一级用于微调增益，同时进一步提供低频段的高通滤波。运放采用圣邦SGM8061，这是一颗高速电压反馈CMOS运放，十分适合在此处应用。
     - 放大器预留一个可调电阻，可以全频段调节输出增益，并且预留了做增益隆起的位置用于补偿线缆衰减等。当采用本项目所选的线圈时，不使用这些预留的补偿也可实现较为平滑的增益曲线。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/99e5c636a1f0492ca0445975439a24fe.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/9.png)
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/669b44cd6cec40caacff5c56b711e08c.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/10.png)
 
 
 
@@ -269,10 +269,10 @@ HQRocoil-Mini用途举例：
 调试难点在于如何标定其频域特性。具体操作方法可以参考视频。
 作者采用矢量网络分析仪进行标定，通过测量S21并调整两个可调电位器来达到想要的平滑曲线。当使用VNA标定时，一般需要自己做一个宽带放大器来提高增益，不然会因为灵敏度太低，矢网测不出来。不过特性平滑的兼顾数Hz到数百MHz的宽带放大器可不太好做：）
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/4eb721aec60145c9baae8ca11442ce6d.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/11.png)
 大家也可以考虑用信号源+示波器进行标定，但是首先需要有一个比较准的电流检测装置才行，其次，探头灵敏度比较小，大家可能需要绕制一个多匝的线圈来放大被测电流。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/8c3b4e3349f24bd1bf84ec7f28d69376.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/12.png)
 
 ### 使用注意事项
 由于线圈有破损的可能，且这种探头常用来测量高压裸露导体（比如功率器件的管脚），使用时为确保人身安全，示波器必须接地。
@@ -281,10 +281,10 @@ HQRocoil-Mini用途举例：
 ## 组装流程
  ### PCBA、3D外壳、面板示意图
  
-![image.png](https://image.lceda.cn/oshwhub/pullImage/54b5f75a8e314bf49e8b5306a8a894c4.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/e44b8bcad3d14ddaa5cf9e675b52dcac.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/e8f3581b903e412eb39f148f34cf1609.png)
-![image.png](https://image.lceda.cn/oshwhub/pullImage/5168a2c6b75640acb7c16bd1ecf33f05.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/13.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/14.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/15.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/16.png)
 
 ### 组装步骤
 外壳设计十分宽松，组装不应遇到太多困难。组装步骤如下：
@@ -304,36 +304,36 @@ HQRocoil-Mini用途举例：
 ## 实物图
 - PCBA
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/221fef84f9e148118e92aa2af0ec449b.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/17.png)
 
 - 线圈
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/68d0cf8f3332499ba673192af362577a.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/18.png)
 
 - 整机
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/9681ffa9f7b1488091c4fdeac3da7c5c.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/19.png)
 
 
 - 视频截图展示
 这里主要是想展示性能实测曲线，但是当时拍视频时太懒，没有留原图，只好视频里截图了。
     - 高频带宽测试
     
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f02cd99a22c0480d90ffec68de8a9bf3.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/20.png)
     - 低频带宽测试
       （注：蓝色为商用探头，红色为本开源项目）
     
-![image.png](https://image.lceda.cn/oshwhub/pullImage/c19eaf4f6b1845df9eaf695717014382.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/21.png)
     - 底噪测试
  
-![image.png](https://image.lceda.cn/oshwhub/pullImage/ba0ce08a2b3e4a1da850f365f96f8aab.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/22.png)
     - 大电流脉冲序列-时域波形对比
   （注：蓝色为商用，红色为本项目）
-![image.png](https://image.lceda.cn/oshwhub/pullImage/71db62f1052b460e8d09ad3fffa46020.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/23.png)
 
     - 高速电流-时域波形对比
   （注：还上蓝色为日本品牌商用，绿色为英国品牌商用，红色为本项目，黄色为基准；所对比商用探头均只有30M带宽，黄色基准分流器有近1GHz带宽，因此都测不准，详细解说见视频）
-![image.png](https://image.lceda.cn/oshwhub/pullImage/f7954bdbd5a84ba7a7e16f01a5bc432c.png)
+![image.png](https://github.com/njyq2008/HQRocoil/blob/main/HQRocoil-Mini/Doc/Image/24.png)
 
 
 ## 成本核算
